@@ -5,4 +5,5 @@ def my_each(array)
     while count > array.size
     array.collect {|word| p "#{word}"}
   end
+  yield
 end
