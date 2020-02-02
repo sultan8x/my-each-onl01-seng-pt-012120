@@ -1,9 +1,10 @@
 # words = ['hi', 'hello', 'bye', 'goodbye']
 
 def my_each(array)
-    count = 0
-    while count > array.size
-    array.collect {|word| p "#{word}"}
+  count = 0
+  while count < array.size
+    yield(array[count])
+    count += 1
   end
-  yield
+
 end
